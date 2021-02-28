@@ -1,0 +1,108 @@
+##ITEMS
+
+##ITEMROOM
+
+"1"
+{
+name:"Knif"
+add:
+	{
+	attackmod:[+2]
+	}
+}
+
+"2"
+{
+name:"Plast"
+add:
+	{
+	healthmod:[+3]
+	}
+}
+
+"3"
+{
+name:"Spon"
+change:
+	{
+	attack:[d3]
+	}
+add:
+	{
+	attackmod:[*2]
+	}
+}
+
+"4"
+{
+name:"Clof"
+add:
+	{
+	dodge:[d6]
+	dodgemod:-4
+	healthmod:[+3]
+	}
+}
+
+"7"
+{
+name:"Dog"
+
+	}
+add:
+	{
+	attackmod:[+2]
+	revive:1
+	}
+}
+
+"8"
+{
+name:"Honr"
+
+	}
+add:
+	{
+	attackmod:[+1]
+	
+	}
+}
+
+##BOSSROOM
+
+"5"
+{
+name:"Whip"
+
+	}
+add:
+	{
+	attackmod:[+2]
+	attackmod:[*2]
+	}
+}
+
+"6"
+{
+name:"Hart"
+
+	}
+add:
+	{
+	healthmod:[+10]
+	block:[d10]
+	blockmod:[-7]
+	}
+}
+
+"9"
+{
+name:"Crytstal"
+
+	}
+add:
+	{
+	attackcrit:[d8]
+	attackcritmod:[-7]
+	}
+}

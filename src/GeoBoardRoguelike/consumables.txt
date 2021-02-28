@@ -1,0 +1,47 @@
+##CONSUMABLES
+
+"plont"
+{
+name:"Plont"
+apply:
+	{
+	healthapply:[+3]
+	}
+}
+
+"phontain"
+{
+name:"Phontain"
+apply:
+	{
+	healthapply:[+10]
+	}
+}
+
+"glod"
+{
+name:"Glod"
+apply:
+	{
+	goldapply:[+1]
+	}
+}
+
+"gold"
+{
+name:"Gold"
+apply:
+	{
+	goldapply:[+3]
+	}
+}
+
+"bank note"
+{
+name:"Bank Note"
+apply:
+	{
+	goldapply:[+15]
+	}
+}
+
