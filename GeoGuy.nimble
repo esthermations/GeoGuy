@@ -6,6 +6,7 @@ description   = "Geoffrey's turn-based roguelike game"
 license       = ""
 srcDir        = "src"
 bin           = @["GeoGuy"]
+backend       = "js"
 
 
 # Dependencies
