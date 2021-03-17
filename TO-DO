@@ -1,0 +1,71 @@
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+
+ART
+
+------------------------
+
+ATTACK TYPES
+#Projectiles
+
+Stats required:
+Range
+Projectile speed
+Projectile hitbox size
+Projectile pathing
+Projectile piercing
+
+-
+
+#Melee
+
+  Activated melee attacks
+  Automatic "contact damage" attacks
+
+-
+
+#Beam
+  Beams that move with the player
+  Beams that halt the player's movement while active
+  Beams that stay in place while the player moves freely
+      
+-
+
+#Targeted AOE
+
+-
+
+#Player-Centric AOE
+
+------------------------
+
+ENEMIES
+
+------------------------
+
+FLOOR GENERATION
+
+------------------------
+
+HEALTH TYPES
+
+------------------------
+
+ITEMS
+
+------------------------
+
+MOVEMENT
+
+------------------------
+
+SEED-BASED GENERATION
+
+------------------------
+
+STATS
+
+------------------------
+
+STATUS EFFECTS
+
+\/\/\/\/\/\/\/\/\/\/\/\/\/\/
