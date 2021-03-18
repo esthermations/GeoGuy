@@ -7,6 +7,9 @@ ART
 ATTACK TYPES
 #Projectiles
 
+  Static Projectiles
+  Dynamic Projectiles
+
 Stats required:
 Range
 Projectile speed
@@ -17,7 +20,6 @@ Projectile piercing
 -
 
 #Melee
-
   Activated melee attacks
   Automatic "contact damage" attacks
 
@@ -31,7 +33,14 @@ Projectile piercing
 -
 
 #Targeted AOE
-
+  AOE that can be targeted on a tile of the player's choosing
+  AOE that will target the nearest enemy unit to the player
+  AOE that will target the nearest enemy unit to the tile of the player's choosing
+  
+ Stats required:
+ Range (distance from centre of AOE)
+ Projectile speed (speed the AOE expands to its maximum range)
+  
 -
 
 #Player-Centric AOE
