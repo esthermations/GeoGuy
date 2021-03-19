@@ -1,6 +1,31 @@
 /\/\/\/\/\/\/\/\/\/\/\/\/\/\
 
 ART
+#Player
+
+-
+
+#Enemies
+
+-
+
+#Bosses
+
+-
+
+#Items
+
+-
+
+#Pickups
+
+-
+
+#Objects
+
+-
+
+#Rooms
 
 ------------------------
 
@@ -27,7 +52,7 @@ Projectile piercing
 
 #Beam
   Beams that move with the player
-  Beams that halt the player's movement while active
+  Beams that halt the unit's movement while active
   Beams that stay in place while the player moves freely
       
 -
@@ -43,7 +68,7 @@ Projectile piercing
   
 -
 
-#Player-Centric AOE
+#Unit-Centric AOE
 
 ------------------------
 
@@ -60,10 +85,31 @@ HEALTH TYPES
 ------------------------
 
 ITEMS
+#Active Items
+
+-
+
+#Passive Items
 
 ------------------------
 
 MOVEMENT
+
+------------------------
+
+ON-DEATH EFFECTS
+#Negative
+  Shooting X # of projectiles out from unit
+  AOE damage from unit (eg. Explosions)
+  Spawn set enemy
+  Spawn random enemy
+
+#Neutral
+  AOE Status Effects from unit
+  Whole room Status Effects
+  
+#Positive
+  Dropping Pickups or Items
 
 ------------------------
 
