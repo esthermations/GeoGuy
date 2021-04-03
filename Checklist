@@ -1,0 +1,126 @@
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+
+ART
+#Player
+
+-
+
+#Enemies
+
+-
+
+#Bosses
+
+-
+
+#Items
+
+-
+
+#Pickups
+
+-
+
+#Objects
+
+-
+
+#Rooms
+
+------------------------
+
+ATTACK TYPES
+#Projectiles
+
+  Static Projectiles
+  Dynamic Projectiles
+
+Stats required:
+Range
+Projectile speed
+Projectile hitbox size
+Projectile pathing
+Projectile piercing
+
+-
+
+#Melee
+  Activated melee attacks
+  Automatic "contact damage" attacks
+
+-
+
+#Beam
+  Beams that move with the player
+  Beams that halt the unit's movement while active
+  Beams that stay in place while the player moves freely
+      
+-
+
+#Targeted AOE
+  AOE that can be targeted on a tile of the player's choosing
+  AOE that will target the nearest enemy unit to the player
+  AOE that will target the nearest enemy unit to the tile of the player's choosing
+  
+ Stats required:
+ Range (distance from centre of AOE)
+ Projectile speed (speed the AOE expands to its maximum range)
+  
+-
+
+#Unit-Centric AOE
+
+------------------------
+
+ENEMIES
+
+------------------------
+
+FLOOR GENERATION
+
+------------------------
+
+HEALTH TYPES
+
+------------------------
+
+ITEMS
+#Active Items
+
+-
+
+#Passive Items
+
+------------------------
+
+MOVEMENT
+
+------------------------
+
+ON-DEATH EFFECTS
+#Negative
+  Shooting X # of projectiles out from unit
+  AOE damage from unit (eg. Explosions)
+  Spawn set enemy
+  Spawn random enemy
+
+#Neutral
+  AOE Status Effects from unit
+  Whole room Status Effects
+  
+#Positive
+  Dropping Pickups or Items
+
+------------------------
+
+SEED-BASED GENERATION
+
+------------------------
+
+STATS
+
+------------------------
+
+STATUS EFFECTS
+
+\/\/\/\/\/\/\/\/\/\/\/\/\/\/
