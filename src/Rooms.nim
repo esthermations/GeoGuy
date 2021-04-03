@@ -1,4 +1,4 @@
-from Gameplay import Thing, GridCoord
+from GameplayConstants import Thing
 
 const
   _ = Floor

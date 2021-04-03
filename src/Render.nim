@@ -1,15 +1,23 @@
 import jscanvas, dom, strformat, strutils
-import Gameplay
+import GameplayConstants
 
 const
   CanvasSize = 750 # Width and height in pixels
+  GridDimension* = 17 # 5 = 5x5, 4 = 4x4 etc
+  BorderWidth* = 2
   GridSquareSize = CanvasSize div GridDimension
   BackgroundStyle = "lavender"
 
-var
-  IconElements: array[Thing, ImageElement]
+type
+  GridCoord* = range[1..GridDimension]
+
+iterator allMapCoords*(): (GridCoord, GridCoord) =
+  for x in GridCoord.low .. GridCoord.high:
+    for y in GridCoord.low .. GridCoord.high:
+      yield (x, y)
 
 var
+  iconElements: array[Thing, ImageElement]
   canvas: CanvasElement = nil
   ctx: CanvasContext = nil
 
@@ -39,13 +47,18 @@ proc drawGrid*(thing: Thing, x, y: GridCoord) =
   elif thing == Wall:
     drawGrid(x, y, "black")
   else:
-    assert IconElements[thing] != nil
+    assert iconElements[thing] != nil
     ctx.drawImage(
-      image   = IconElements[thing],
+      image   = iconElements[thing],
       dx      = x.toPixels(),
       dy      = y.toPixels(),
       dWidth  = GridSquareSize,
-      dHeight = GridSquareSize)
+      dHeight = GridSquareSize
+    )
+
+proc clearEntireGrid*() =
+  for (x, y) in allMapCoords():
+    Render.clearGrid(x, y)
 
 
 proc clearCanvas*() =
@@ -62,5 +75,4 @@ proc initCanvas*() =
 
   for t in Thing:
     if t in [ Floor, Wall ]: continue
-    IconElements[t] = loadIcon(t)
-
+    iconElements[t] = loadIcon(t)
